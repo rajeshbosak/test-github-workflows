@@ -1,6 +1,6 @@
 # Example to-do List Application
 
-This repository is a simple to-do list manager that runs on Node.js.
+This is a github workflows test.
 
 ## Getting started
 
