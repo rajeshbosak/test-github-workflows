@@ -1,10 +1,14 @@
+# test-github-workflows
+
+This is a github workflows test.
+
 # Example to-do List Application
 
 This repository is a simple to-do list manager that runs on Node.js.
 
 ## Getting started
 
-Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Mac or Windows. Docker Compose will be automatically installed. 
+Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Mac or Windows. Docker Compose will be automatically installed.
 On Linux, make sure you have the latest version of [Compose](https://docs.docker.com/compose/install/).
 
 ## Clone the repository
@@ -49,13 +53,8 @@ todo-list-app-mysql-1   mysql:8.0        "docker-entrypoint.s…"   mysql     24
 
 If you look at the Docker Desktop GUI, you can see the containers and dive deeper into their configuration.
 
-
-
-
 <img width="1330" alt="image" src="https://github.com/dockersamples/todo-list-app/assets/313480/d85a4bcf-e2c3-4917-9220-7d9b9a78dc54">
-
 
 ## Access the app
 
 The to-do list app will be running at [http://localhost:3000](http://localhost:3000).
-
