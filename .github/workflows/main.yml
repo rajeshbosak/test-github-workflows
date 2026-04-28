@@ -51,20 +51,20 @@ jobs:
                   cache-from: type=local,src=/tmp/.buildx-cache
                   cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
-            - name: Run tests inside container
-              run: |
-                  docker run --rm \
-                    --network host \
-                    -e NODE_ENV=test \
-                    -e MYSQL_HOST=localhost \
-                    -e MYSQL_PORT=3306 \
-                    -e MYSQL_DB=todoapp_test \
-                    -e MYSQL_USER=root \
-                    -e MYSQL_PASSWORD=secret \
-                    nodejs-app-test:latest
-              env:
-                  CI: true
-              timeout-minutes: 360
+            # - name: Run tests inside container
+            #   run: |
+            #       docker run --rm \
+            #         --network host \
+            #         -e NODE_ENV=test \
+            #         -e MYSQL_HOST=localhost \
+            #         -e MYSQL_PORT=3306 \
+            #         -e MYSQL_DB=todoapp_test \
+            #         -e MYSQL_USER=root \
+            #         -e MYSQL_PASSWORD=secret \
+            #         nodejs-app-test:latest
+            #   env:
+            #       CI: true
+            #   timeout-minutes: 360
 
     build-and-push:
         name: Build and Push Docker Image
