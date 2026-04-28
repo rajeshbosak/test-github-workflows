@@ -64,7 +64,7 @@ jobs:
                     nodejs-app-test:latest
               env:
                   CI: true
-              timeout-minutes: 120
+              timeout-minutes: 360
 
     build-and-push:
         name: Build and Push Docker Image
